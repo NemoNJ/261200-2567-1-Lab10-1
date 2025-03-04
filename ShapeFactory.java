@@ -13,7 +13,7 @@ public class ShapeFactory {
 
     public static Shape getShape(int type){
         if (totalShapes >= MAX_TOTAL_SHAPES) {
-            System.out.println("Cannot create more shapes. Maximum limit reached!");
+            System.out.println("Cannot create more Shapes limit of 5 reached");
             return null;
         }
 
@@ -43,7 +43,7 @@ public class ShapeFactory {
                 System.out.println("Invalid shape type");
                 return null;
         }
-        System.out.println("Cannot create more of this shape type. Limit reached!");
+        System.out.println("Cannot create more specific Shapes limit of 2 reached");
         return null;
     }
 }
